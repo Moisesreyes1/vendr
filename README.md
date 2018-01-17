@@ -7,5 +7,13 @@
 </ul>
 <hr>
 
+<p>Navigating Signed in page</p>
+<ul>Vendor's table:
+<li>Vendor: Name of vendor/supplier</li>
+<li>Delivery: Displays the status of delivery</li>
+<ol type="i">
+<li>On time: Delivery should arrive in the agreed time window</li>
+</ol>
+</ul>
 
 
