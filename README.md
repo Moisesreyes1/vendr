@@ -13,7 +13,11 @@
 <li>Delivery: Displays the status of delivery</li>
 <ol type="i">
 <li>On time: Delivery should arrive in the agreed time window</li>
+<li>Delayed: Delivery will not arrive "on time" due to unforseen circumstances (Please, refer to "comment" for details)</li>
+<li>Cancel: Product/Service will not be provided (Please, refer to "comment" for details)
 </ol>
+<li>Comment: See comment by sent by vendor/supplier</li>
+<li>Send Message: Select a message from dopdown list or create your own to send to the specific vendor/suppier</li> 
 </ul>
 
 
