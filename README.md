@@ -1,5 +1,5 @@
 <h1>Vendr</h1>
-<h3>Finally, instant communication between customers and vendors!</h3>
+<h3>Finally, instant communication between customers and vendors/suppliers!</h3>
 <h4>This application serves as direct communication between the customer and its vendors/suppliers regarding delivery/services status</h4>
 <ul><i>Register/Sign in Instructions:</i>
 <li>Click on "register" to and complete form to create your account</li>
