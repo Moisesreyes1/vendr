@@ -14,9 +14,9 @@
 <ol type="i">
 <li><b>On time:</b> Delivery should arrive in the agreed time window</li>
 <li><b>Delayed:</b> Delivery will not arrive "on time" due to unforseen circumstances (Please, refer to "comment" for details)</li>
-<li><b>Cancel:</b> Product will not be provided (Please, refer to "comment" for details)
+<li><b>Cancel:</b> Product will not be delivered (Please, refer to "comment" for details)
 </ol>
-<li><b>Comment:</b> See comment by sent by vendor/supplier</li>
+<li><b>Comment:</b> View comment sent by vendor/supplier</li>
 <li><b>Send Message:</b> Select a message from dopdown list or create your own to send to the specific vendor/suppier</li> 
 </ul>
 <br>
