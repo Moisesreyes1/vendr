@@ -1,13 +1,13 @@
 <h1>Vendr</h1>
 <h3>Finally, instant communication between customers and vendors!</h3>
-<p><u>This application serves as direct communication between the customer and its vendors/suppliers</u></p>
+<u><p>This application serves as direct communication between the customer and its vendors/suppliers</p></u>
 <ul><i>Register/Sign in Instructions:</i>
 <li>Click on "register" to and complete form to create your account</li>
 <li>If already registered, then "sign in" using your login credentials (Created during registration)</li>
 </ul>
 <hr>
 
-<p><u>Navigating Signed in page</u></p>
+<u><p>Navigating Signed in page</p></u>
 <ul><i>Vendor's table:</i>
 <li><b>Vendor:</b> Name of vendor/supplier</li>
 <li><b>Delivery:</b> Displays the status of delivery</li>
@@ -21,7 +21,7 @@
 </ul>
 <br>
 <br>
-<ul><i>My Customer's table</i>
+<ul><i>My Customer's table:</i>
 <li><b>Search input:</b> Type the name of the vendor/supplier you want to send a message and click the "search" button</li>
 <li>Or</li>
 <li>Click on the "select" dropdown and click on vendor/supplier you want to send a message</li>
