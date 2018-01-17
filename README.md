@@ -23,7 +23,7 @@
 <br>
 <ul><i>My Customer's table:</i>
 <li><b>Search input:</b> Type the name of the vendor/supplier you want to send a message and click the "search" button</li>
-<li>Or</li>
+Or
 <li>Click on the "select" dropdown and click on vendor/supplier you want to send a message</li>
 </ul>
 
