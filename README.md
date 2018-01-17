@@ -5,4 +5,7 @@
 <li>Click on "register" to and complete form to create your account</li>
 <li>If already registered, then "sign in" using your login credentials (Created during registration)</li>
 </ul>
+<hr>
+
+
 
