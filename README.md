@@ -19,5 +19,12 @@
 <li>Comment: See comment by sent by vendor/supplier</li>
 <li>Send Message: Select a message from dopdown list or create your own to send to the specific vendor/suppier</li> 
 </ul>
+<br>
+<br>
+<ul>My Customer's table
+<li>Search input: Type the name of the vendor/supplier you want to send a message and click the "search" button</li>
+<li>Or</li>
+<li>Click on the "select" dropdown and click on vendor/supplier you want to send a message</li>
+</ul>
 
 
