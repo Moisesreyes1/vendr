@@ -134,9 +134,9 @@
             <div class= "item">5</div>
             <div class= "item">6</div>
        </div> -->
-       <div class="container">
-            <div class= "header">Vendr</div>
-            <div class="flex-center position-ref full-height">
+        <section id="container">
+            <header>Vendr</header>
+            <nav>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -147,11 +147,15 @@
                         <a class="links" href="/tools">Tools</a>
                     @endauth
                 </div>
-                <div class="leftside">
-                    <h4>About Us</h4>
-                </div>
             @endif
-            </div>           
-        </div>
+            </nav>
+            <main>About Us
+            <p>Our mission is to simplified communication between customers and its vendor/suppliers in regards to status of delivery.  No more calling around to find out what happened with your delivery.  Vendr lets customers see the status of their current day receiving deliveries.  Moreover, customers can also send messages to their vendor/supplier if needed.</p>
+            </main>
+            <aside>
+            Contact Us
+            
+            </aside>
+        </section>
     </body>
 </html>
