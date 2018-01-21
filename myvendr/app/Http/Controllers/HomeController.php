@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /** Sender email */
+    public function build()
+{
+    return $this->from('example@example.com')
+                ->view('emails.orders.shipped');
+}
 }
