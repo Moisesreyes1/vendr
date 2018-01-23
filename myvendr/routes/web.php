@@ -17,6 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/logout', "LogoutController@logout");
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 /**Email Contact */

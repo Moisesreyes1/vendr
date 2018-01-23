@@ -13,18 +13,21 @@
         <!-- Styles -->
         <style>
         body {
-            background-image: url(/assets/images/truck.jpg);
+            background-image: url(../images/truck.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
         
         .container {
             display: grid;
             grid-template-columns: repeat(2, auto);
             width: 100%;
-            font-size: 100px;
         }
 
-        .header {
+        header {
             font-family: 'Work Sans', sans-serif;
+            font-size: 100px;
+            color: white;
             margin-top: -10px;
             /* font-family: 'Roboto', sans-serif; */
         }
@@ -141,6 +144,7 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/logout') }}">Logout</a>
                     @else
                         <a class="links" href="{{ route('login') }}">Login</a>
                         <a class="links" href="{{ route('register') }}">Register</a>
