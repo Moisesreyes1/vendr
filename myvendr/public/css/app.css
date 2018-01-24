@@ -8350,3 +8350,41 @@ button.close {
   }
 }
 
+body {
+  background-image: url("/images/truck.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: blue;
+}
+
+.container {
+  display: grid;
+  width: auto;
+  height: auto;
+  margin: 0 auto 0;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+.item {
+  border: 5px solid red;
+}
+
+.links {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 3px;
+  display: grid;
+  grid-row: 1 / 1;
+}
+
