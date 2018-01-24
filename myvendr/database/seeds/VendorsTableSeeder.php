@@ -12,7 +12,7 @@ class VendorsTableSeeder extends Seeder
     public function run()
     {
        DB::table('vendors')->insert([
-           'name' => 'supermarket'
+           'name' => 'Candy Company'
        ]);
     }
 }

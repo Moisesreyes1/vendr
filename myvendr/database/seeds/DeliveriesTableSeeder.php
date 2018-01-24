@@ -12,9 +12,9 @@ class DeliveriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('deliveries')->insert([
-            'vendor_id' => 1,
-            'user_id' => 2,
-            'status' => 'on time'
+            'vendor_id' => 9,
+            'user_id' => 11,
+            'status' => 'cancelled'
         ]);
     }
 }
