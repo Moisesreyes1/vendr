@@ -26,7 +26,6 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/logout') }}">Logout</a>
                 </div>
                 <h3>Deliveries</h3>
