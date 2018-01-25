@@ -2,17 +2,38 @@ body {
     background-image: url('/images/truck.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    color: blue;
 }
 
-.container {
+.containerTwo {
+    height: 100%;
     display: grid;
-    width: auto;
-    height: auto;
-    margin: 0 auto 0;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-gap: 1em;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "m m" "a c" "f f";
+}
+
+.title {}
+
+.menuTwo {
+    grid-area: m;
+}
+
+.contentTwo {
+    grid-area: a;
+    color: black;
+    text-align: center;
+}
+
+.contentThree {
+    grid-area: c;
+    color: yellow;
+    text-align: center;
+}
+
+.footer {
+    grid-area: f;
+    text-align: center;
 }
 
 th {
@@ -28,10 +49,22 @@ th {
     border: 5px solid red;
 }
 
-.links {
-    font-size: 20px;
-    text-align: right;
-    margin-top: 3px;
-    display: grid;
-    grid-row: 1 / 1;
+// .links {
+//     font-size: 20px;
+//     text-align: right;
+//     margin-top: 3px;
+//     display: grid;
+//     grid-row: 1 / 1;
+// }
+@media screen and (max-width: 480px) {
+    .header {
+        grid-column: span 6;
+    }
+    .menu {
+        grid-row: 1;
+        grid-column: span 6;
+    }
+    .content {
+        grid-column: span 12;
+    }
 }
