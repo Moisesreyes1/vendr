@@ -13,28 +13,24 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-       <!-- <div class= "container">
-            <div class= "item">1</div>
-            <div class= "item">2</div>
-            <div class= "item">3</div>
-            <div class= "item">4</div>
-            <div class= "item">5</div>
-            <div class= "item">6</div>
-       </div> -->
         <section id="container">
-            <header>Vendr</header>
+            <div class="wrapper">
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/logout') }}">Logout</a>
+                <h1 class="title">Vendr</h1>
+                <div class="header">Deliveries</div>
+                <div class="navigation">
+                @auth
+                    <a href="{{ url('/logout') }}">Logout</a>
                 </div>
-                <h3>Deliveries</h3>
+                <div class"menu">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
                     <label class="form-check-label" for="autoSizingCheck2">
                     Select To Send Message To All Vendors
                     </label>
                 </div>
+                </div>
+                <div class="content">
                     <table>
                         <tr>
                             <th>Vendor/Supplier</th>
@@ -60,26 +56,24 @@
                             </td>
                         </tr>
                     </table>
-
-                
-                <div class="top-right links">
-                    @else
-                        <a class="links" href="{{ route('login') }}">Login</a>
-                        <a class="links" href="{{ route('register') }}">Register</a>
-                        <a class="links" href="/tools">Tools</a>
                 </div>
-                        <main>About Us
-                        <p>Our mission is to simplified communication between customers and its vendor/suppliers in regards to status of delivery.  No more calling around to find out what happened with your delivery.  Vendr lets customers see the status of their current day receiving deliveries.  Moreover, customers can also send messages to their vendor/supplier if needed.</p>
-                        </main>
-                        <aside>
-                        Contact Us
-                        
-                        </aside>
-
-                    @endauth
-              
+            @else
+                <div class="wrapper">
+                    <a class="links" href="{{ route('login') }}">Login</a>
+                    <a class="links" href="{{ route('register') }}">Register</a>
+                    <a class="links" href="/tools">Tools</a>
+                </div>
+                    <main>About Us
+                    <p>Our mission is to simplified communication between customers and its vendor/suppliers in regards to status of delivery.  No more calling around to find out what happened with your delivery.  Vendr lets customers see the status of their current day receiving deliveries.  Moreover, customers can also send messages to their vendor/supplier if needed.</p>
+                    </main>
+                    <aside>
+                    Contact Us
+                    
+                    </aside>
+                <div>
+                @endauth
             @endif
-           
+            </div>
         </section>
     </body>
 </html>
