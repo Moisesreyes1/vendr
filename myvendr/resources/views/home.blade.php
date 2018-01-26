@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Risque" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
     <div class="container">
@@ -60,19 +61,35 @@
         @else
         <div class="containerTwo">
             <div class="menuTwo">
-                <a class="links" href="{{ route('home') }}">Home</a>
-                <a class="links" href="{{ route('login') }}">About</a>
+                <a class="links" href="#top">Home</a>
+                <a class="links" href="#containerEmpty">About us</a>
+                <a class="links" href="#containerEmptyTwo">Contact us</a>
                 <a class="links" href="{{ route('login') }}">Login</a>
                 <a class="links" href="{{ route('register') }}">Register</a>
                 <a class="links" href="/tools">Tools</a>
             </div>
-            <div class="contentTwo">
-                About Us
-                <p>Our mission is to simplified communication between customers and its vendor/suppliers in regards to status of delivery.  No more calling around to find out what happened with your delivery.  Vendr lets customers see the status of their current day receiving deliveries.  Moreover, customers can also send messages to their vendor/supplier if needed.</p>
+            <div class="motto">
+                Wonder. No More.
             </div>
-            <div class="contentThree">
+            <div id="containerEmpty">
+            </div>
+            <div id="About">
+                About Us
+                <p>Our mission is to simplified communication between customers and vendor/suppliers in regards to status of delivery.  No more calling around to find out what happened with your delivery.  Vendr lets customers see the status of their current day receiving deliveries.  Moreover, customers can also send messages to their vendor/supplier if needed.</p>
+                <a class="backToTop" href="#top">Back to Top</a>
+            </div>
+            <div id="containerEmptyTwo"></div>
+            <div id="contentThree">
                 Contact Us
-                <p> Email: vendr@gmail.com</p>
+                <p>Email:<a class="vemail" href="#">vendr@gmail.com</a></p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-slack"></a>
+                <div>
+                    <a class="backToTop" href="#top">Back to Top</a>
+                </div>
             </div>
             @endauth
         @endif
