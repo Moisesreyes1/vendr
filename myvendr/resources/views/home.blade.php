@@ -8,60 +8,60 @@
         <title>Vendr</title>
 
         <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> -->
-
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Risque" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
 <body>
     <div class="container">
-        <div class="wrapper">
         @if (Route::has('login'))
-            <h1 class="title">Vendr</h1>
-            <div class="navigation">
-            @auth
-                <div class="header">Deliveries</div>
-                <a href="{{ url('/logout') }}">Logout</a>
+        <h1 class="title">Vendr</h1>
+        <div class="navigation">
+        @auth
+            <div class="header">Deliveries</div>
+            <a href="{{ url('/logout') }}">Logout</a>
+        </div>
+        <div class"menu">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+            <label class="form-check-label" for="autoSizingCheck2">
+            Select To Send Message To All Vendors
+            </label>
             </div>
-            <div class"menu">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                <label class="form-check-label" for="autoSizingCheck2">
-                Select To Send Message To All Vendors
-                </label>
-                </div>
-            </div>
-            <div class="content">
-                <table>
-                    <tr>
-                        <th>Vendor/Supplier</th>
-                        <th>Status</th>
-                        <th>Comment</th>
-                        <th>Send Message</th>
-                    </tr>
-                    <tr>
-                        <td>Soda Company</td>
-                        <td>On time</td>
-                        <td></td>
-                        <td>
-                        <form>
-                            <div class="form-row align-items-center">
-                                <div class="col-auto">
-                                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Message">
-                                </div>
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Vendor/Supplier</th>
+                    <th>Status</th>
+                    <th>Comment</th>
+                    <th>Send Message</th>
+                </tr>
+                <tr>
+                    <td>Soda Company</td>
+                    <td>On time</td>
+                    <td></td>
+                    <td>
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Message">
                             </div>
-                        </form>
-                        </td>
-                        <td>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                        </div>
+                    </form>
+                    </td>
+                    <td>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
         @else
         <div class="containerTwo">
             <div class="menuTwo">
+                <a class="links" href="{{ route('home') }}">Home</a>
+                <a class="links" href="{{ route('login') }}">About</a>
                 <a class="links" href="{{ route('login') }}">Login</a>
                 <a class="links" href="{{ route('register') }}">Register</a>
                 <a class="links" href="/tools">Tools</a>

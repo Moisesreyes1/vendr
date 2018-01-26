@@ -8351,9 +8351,12 @@ button.close {
 }
 
 body {
-  background-image: url("/images/truck.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: url("/images/truck.jpg") no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .containerTwo {
@@ -8365,8 +8368,24 @@ body {
   grid-template-areas: "m m" "a c" "f f";
 }
 
+.title {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Anton', sans-serif;
+}
+
 .menuTwo {
+  text-align: center;
   grid-area: m;
+}
+
+a {
+  padding: 45px;
+  font-size: 20px;
+  color: wheat;
+  text-decoration: none;
 }
 
 .contentTwo {
@@ -8400,17 +8419,25 @@ th {
 }
 
 @media screen and (max-width: 480px) {
-  .header {
+  .title {
     grid-column: span 6;
   }
 
-  .menu {
+  .menuTwo {
     grid-row: 1;
     grid-column: span 6;
   }
 
-  .content {
+  .contentTwo {
     grid-column: span 12;
+  }
+
+  .contentThree {
+    grid-column: span 12;
+  }
+
+  .footer {
+    grid-column: span 6;
   }
 }
 
