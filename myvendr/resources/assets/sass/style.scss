@@ -61,10 +61,14 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: wheat;
 }
 
 .backToTop {
+    color: blue;
+}
+
+.backToTop:hover {
     color: blue;
 }
 
@@ -72,6 +76,7 @@ a:hover {
     grid-area: a;
     color: black;
     text-align: center;
+    // background: url("/images/groupfist.jpg");
     background-color: honeydew;
     font-size: 40px;
     font-family: 'Abril Fatface', cursive;
@@ -100,6 +105,10 @@ p {
     margin-left: 10px;
 }
 
+.vemail:hover {
+    color: blue;
+}
+
 .fa {
     // padding: 20px;
     font-size: 30px;
@@ -111,6 +120,7 @@ p {
 
 .fa:hover {
     opacity: 0.7;
+    color: inherit;
 }
 
 .fa-facebook {

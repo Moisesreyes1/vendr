@@ -8408,10 +8408,14 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: wheat;
 }
 
 .backToTop {
+  color: blue;
+}
+
+.backToTop:hover {
   color: blue;
 }
 
@@ -8446,6 +8450,10 @@ p {
   margin-left: 10px;
 }
 
+.vemail:hover {
+  color: blue;
+}
+
 .fa {
   font-size: 30px;
   width: 50px;
@@ -8456,6 +8464,7 @@ p {
 
 .fa:hover {
   opacity: 0.7;
+  color: inherit;
 }
 
 .fa-facebook {
