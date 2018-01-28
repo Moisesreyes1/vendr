@@ -26,7 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 /* Deliveries view*/
 Route::get('/deliveries', 'DeliveriesController@index')->name('deliveries.index');
 Route::get('/deliveries/{id}', 'DeliveriesController@show')->name('deliveries.show');
-Route::get('/deliveries/{id}/edit', 'DeliveriesController@edit')->name('deliveries.edit');
+Route::post('/deliveries/{id}/edit', 'DeliveriesController@edit')->name('deliveries');
+
+
 
 /**Email Contact */
 Route::get('contact', 'ContactController@create')->name('contact.create');

@@ -20,12 +20,12 @@
     </div>
         <div class="containerTwo">
             <div class="menuTwo">
-                <a class="links" href="#top">Home</a>
+                <!-- <a class="links" href="#top">Home</a> -->
                 <a class="links" href="#containerEmpty">About us</a>
                 <a class="links" href="#containerEmptyTwo">Contact us</a>
                 @auth
                     <a class="links" href="{{ route('deliveries.index') }}">Deliveries</a>
-                    <a href="{{ url('/logout') }}">Logout</a>
+                    <a class="links" href="{{ url('/logout') }}">Logout</a>
                 @else
                     <a class="links" href="{{ route('login') }}">Login</a>
                     <a class="links" href="{{ route('register') }}">Register</a>
@@ -39,7 +39,7 @@
             </div>
             <div id="About">
                 About Us
-                <p>Our mission is to simplify communication between customer and vendor/supplier in regards to status of delivery.  Vendr is an application that gives customers and suppliers the ability to send and receive instant messages on current day deliveries.  No more calling around to find out what happened with your delivery.</p>
+                <p>Our mission is to simplify communication between customer and vendor/supplier.  Vendr is an application that gives customers and suppliers the ability to send and receive instant messages on current day deliveries.  No more calling around to find out what happened with your delivery.</p>
                 <a class="backToTop" href="#top">Back to Top</a>
             </div>
             <div id="containerEmptyTwo"></div>

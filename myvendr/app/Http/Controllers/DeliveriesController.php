@@ -13,7 +13,7 @@ class DeliveriesController extends Controller
     public function index()
     {
         $userId = Auth::id();
-        $vendorId = DB::table('vendors')->where('user_id', $userId)->value('id');
+        $vendorId = DB::table('vendors')->where('user_id', $userId)->value('user_id');
         $deliveries = Delivery::where('vendor_id', $vendorId)->with('vendor')->get();
 
         return view('deliveries.index', compact('deliveries'));
@@ -26,10 +26,13 @@ class DeliveriesController extends Controller
        return view('deliveries.show', compact('delivery'));
     }
 
-    public function edit($id)
+    public function edit($id, Request $request)
     {
-        // edit deliver record using a form field
+        $delivery = Delivery::find($id);
 
-        return view('deliveries.edit');
+        $delivery->comment = $request->message;
+        $delivery->save();
+        
+        return redirect()->route('deliveries.index');
     }
 }
