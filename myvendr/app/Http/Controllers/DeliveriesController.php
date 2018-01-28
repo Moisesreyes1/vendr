@@ -13,7 +13,7 @@ class DeliveriesController extends Controller
     public function index()
     {
         $userId = Auth::id();
-        $vendorId = DB::table('vendors')->where('user_id', $userId)->value('user_id');
+        $vendorId = DB::table('vendors')->where('user_id', $userId)->value('id');
         $deliveries = Delivery::where('vendor_id', $vendorId)->with('vendor')->get();
 
         return view('deliveries.index', compact('deliveries'));

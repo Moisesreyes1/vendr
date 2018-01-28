@@ -43,8 +43,9 @@ button {
     <form action='/deliveries/{{$delivery->id}}/edit' method='post'>
         <h3>Message</h3>
         <div class="form-group">
-            <!-- <label for="exampleFormControlTextarea1">Message</label> -->
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <input type='text' name='message' value='{{$delivery->comment}}'>
+        <input type='hidden' name='_token' value='{{csrf_token()}}'>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
     </form>
