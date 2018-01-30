@@ -31,33 +31,43 @@
                     <a class="links" href="{{ route('login') }}">Login</a>
                     <a class="links" href="{{ route('register') }}">Register</a>
                 @endauth
-                <a class="links" href="#">Tools</a>
+                <a class="links" href="#containerEmptyThree">Tools</a>
             </div>
-            <div class="motto">
-                Wonder. No More.
-            </div>
-            <div id="containerEmpty">
-            </div>
-            <div id="About">
-                About Us
-                <p>Our mission is to simplify communication between customer and vendor/supplier.  Vendr is an application that gives customers and suppliers the ability to send and receive instant messages on current day deliveries.  No more calling around to find out what happened with your delivery.</p>
+        <div class="motto">
+            Wonder. No More.
+        </div>
+        <div id="containerEmpty">
+        </div>
+        <div id="About">
+            About Us
+            <p>Our mission is to simplify communication between customer and vendor/supplier.  Vendr is an application that gives customers and suppliers the ability to send and receive instant messages on current day deliveries.  No more calling around to find out what happened with your delivery.</p>
+            <a class="backToTop" href="#top">Back to Top</a>
+        </div>
+        <div id="containerEmptyTwo"></div>
+        <div id="contentThree">
+            Contact Us
+            <p>Email:<a class="vemail" href="#">vendr@gmail.com</a></p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-slack"></a>
+            <div>
                 <a class="backToTop" href="#top">Back to Top</a>
             </div>
-            <div id="containerEmptyTwo"></div>
-            <div id="contentThree">
-                Contact Us
-                <p>Email:<a class="vemail" href="#">vendr@gmail.com</a></p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-slack"></a>
-                <div>
-                    <a class="backToTop" href="#top">Back to Top</a>
-                </div>
-            </div>
-            
         </div>
+        <div id= "containerEmptyThree"></div>
+        <div id="Tools">
+            Brought To You By:
+                <h3>Laravel - Open-source PHP framework</h3>
+                <h3>PHP - Widely-used, open-source server-side scripting and general purpose programming language</h3>
+                <h3>MYSQL Workbench - Provides data modeling</h3>
+                <h3>CSS Grid - Grid-based layout system with rows and columns natively available in the browser</h3>
+                <h3>Bootstrap - Open-source front-end framework for designing websites and applications</h3>
+                <h3>MRP LLC - Thinking what's next? MRP already did.</h3>     
+                <a class="backToTop" href="#top">Back to Top</a>
+        </div>
+    </div>
     <div class="footer">&copy; Copyright 2018 MRP LLC</div>
 </body>
 </html>

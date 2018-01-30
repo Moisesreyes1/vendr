@@ -8372,8 +8372,8 @@ body {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 50px 100px 1fr 1fr 100px 1fr 200px 250px 1fr;
-  grid-template-areas: "m m" "d d" "z z" "x x" "b b" "a a" "y y" "c c" "f f";
+  grid-template-rows: 50px 100px 1fr 1fr 100px 330px 200px 250px 200px 1fr 1fr;
+  grid-template-areas: "m m" "d d" "z z" "x x" "b b" "a a" "y y" "c c" "n n" " t t" "f f";
 }
 
 #containerEmpty {
@@ -8451,6 +8451,21 @@ p {
   font-family: 'Abril Fatface', cursive;
 }
 
+#Tools {
+  grid-area: t;
+  color: black;
+  text-align: center;
+  background-color: honeydew;
+  font-size: 40px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+#containerEmptyThree {
+  height: 100px;
+  display: grid;
+  grid-area: n;
+}
+
 .vemail {
   color: blue;
   font-size: 30px;
@@ -8502,6 +8517,7 @@ p {
 .footer {
   grid-area: f;
   text-align: center;
+  color: #c2c2c2;
 }
 
 th {
