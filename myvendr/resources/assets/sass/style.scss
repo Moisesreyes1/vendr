@@ -10,17 +10,25 @@ body {
     // background-repeat: no-repeat;
 }
 
+.miniContainer {
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 100px;
+    grid-template-areas: "h h";
+}
+
 .containerTwo {
     height: 100%;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 1fr 1fr 100px 1fr 200px 250px 1fr;
-    grid-template-areas: "m m" "z z" "x x" "b b" "a a" "y y" "c c" "f f";
+    grid-template-rows: 50px 100px 1fr 1fr 100px 1fr 200px 250px 1fr;
+    grid-template-areas: "m m" "d d" "z z" "x x" "b b" "a a" "y y" "c c" "f f";
 }
 
 #containerEmpty {
-    height: 100px;
+    height: 115px;
     display: grid;
     grid-area: b;
 }
@@ -31,17 +39,17 @@ body {
     grid-area: y;
 }
 
-.title {
-    font-size: 100px;
-    color: white;
-    // font-family: 'Risque', cursive;
-    text-align: center;
-    margin-top: 0;
-    font-family: 'Anton', sans-serif;
-    // font-family: 'Abril Fatface', cursive;
+#logo {
+    position: absolute;
+    top: -49px;
+    // left: 523px;
+    // width: 150px;
+    // display: grid;
+    // grid-area: h;
 }
 
 .menuTwo {
+    background: black;
     text-align: center;
     grid-area: m;
 }
@@ -56,7 +64,7 @@ body {
 .links {
     margin: 45px;
     font-size: 20px;
-    color: wheat;
+    color: 0bfbfb;
     text-decoration: none;
 }
 
@@ -66,6 +74,7 @@ body {
 
 .backToTop {
     color: blue;
+    font-size: 20px;
 }
 
 .backToTop:hover {
@@ -183,4 +192,11 @@ th {
     .footer {
         grid-column: span 6;
     }
+}
+
+// app.blade //
+#logoLogin {
+    position: absolute;
+    top: -28px;
+    width: 100px;
 }

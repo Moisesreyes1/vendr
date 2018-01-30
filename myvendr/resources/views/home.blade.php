@@ -15,9 +15,10 @@
     </head>
 <body>
     <div class="container">
-        <h1 class="title">Vendr</h1>
-        <div class="navigation">
-    </div>
+        <div class="miniContainer">
+            <img id="logo" src="/images/logotruck.png" alt="truck">    
+            <!-- <h1 class="title">Vendr</h1> -->
+        </div>
         <div class="containerTwo">
             <div class="menuTwo">
                 <!-- <a class="links" href="#top">Home</a> -->
@@ -30,7 +31,7 @@
                     <a class="links" href="{{ route('login') }}">Login</a>
                     <a class="links" href="{{ route('register') }}">Register</a>
                 @endauth
-                <a class="links" href="/tools">Tools</a>
+                <a class="links" href="#">Tools</a>
             </div>
             <div class="motto">
                 Wonder. No More.

@@ -1,98 +1,109 @@
-    .containerIndex {
-        display: grid;
-        // height: 100%;
-        // grid-gap: 3px;
-        // width: 80%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px auto 1fr 1fr;
-        grid-template-areas: "t t" "h i" "c c" "f f";
-    }
-    
-    .titleIndex {
-        font-size: 50px;
-        color: white;
-        margin-top: 0;
-        font-family: 'Anton', sans-serif;
-        display: grid;
-        grid-area: t;
-        width: 20%;
-    }
-    
-    .titleIndex:hover {
-        color: white;
-        text-decoration-line: none;
-    }
-    
-    .navigationIndex {
-        font-size: 50px;
-        color: white;
-        display: grid;
-        grid-area: h;
-        background: darkblue;
-    }
-    
-    h3 {
-        margin-left: 10px;
-        margin-top: 7px;
-        font-size: 30px;
-    }
-    
-    #linksIndex {
-        display: grid;
-        grid-area: i;
-        font-size: 20px;
-        background: darkblue;
-        color: white;
-    }
-    
-    .homeIndex {
-        padding: 0;
-        margin: 0;
-        width: 70px;
-        position: absolute;
-        right: 160px;
-        top: 107px;
-        color: white;
-    }
-    
-    .logoutIndex {
-        padding: 0;
-        margin: 0;
-        width: 70px;
-        position: absolute;
-        right: 50px;
-        top: 107px;
-        color: white;
-    }
-    
-    .homeIndex:hover {
-        color: white;
-    }
-    
-    .logoutIndex:hover {
-        color: white;
-    }
-    
-    .content {
-        background: lightgray;
-        text-align: center;
-        display: grid;
-        grid-area: c;
-        width: 100%;
-    }
-    
-    .indexTable {
-        color: blue;
-    }
-    
-    .tableContent {
-        margin: 20px;
-        width: 100%;
-        margin-left: 132px;
-    }
-    
-    // tr,
-    // th,
-    // td {
-    //     border: 1px solid black;
-    // }
+.containerIndex {
+    background: url("/images/city.jpg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    // height: 100%;
+    // grid-gap: 3px;
+    // width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 1fr 1fr;
+    grid-template-areas: "t t" "h i" "c c" "f f";
+}
+
+.titleIndex {
+    font-size: 50px;
+    color: white;
+    margin-top: 0;
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-area: t;
+    width: 20%;
+}
+
+.titleIndex:hover {
+    color: white;
+    text-decoration-line: none;
+}
+
+.navigationIndex {
+    font-size: 50px;
+    color: white;
+    display: grid;
+    grid-area: h;
+    background: darkblue;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+#linksIndex {
+    display: grid;
+    grid-area: i;
+    font-size: 20px;
+    background: darkblue;
+    color: white;
+}
+
+.homeIndex {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    position: absolute;
+    right: 160px;
+    top: 107px;
+    color: white;
+}
+
+.logoutIndex {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    position: absolute;
+    right: 50px;
+    top: 107px;
+    color: white;
+}
+
+.homeIndex:hover {
+    color: white;
+}
+
+.logoutIndex:hover {
+    color: white;
+}
+
+.content {
+    background: lightgray;
+    text-align: center;
+    display: grid;
+    grid-area: c;
+    width: 100%;
+}
+
+.indexTable {
+    color: blue;
+}
+
+.tableContent {
+    margin: 20px;
+    width: 100%;
+    margin-left: 132px;
+}
+
+#logoIndex {
+    position: absolute;
+    top: -53px;
+}
+
+// tr,
+// th,
+// td {
+//     border: 1px solid black;
+// }

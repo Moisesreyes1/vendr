@@ -1,7 +1,21 @@
+<style>
+    html, body {
+        background: url("/images/city.jpg") no-repeat top center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+</style>
+
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <div class="containerIndex">
         @if (Route::has('login'))
-        <h1> <a href="{{ url('/home') }}" class="titleIndex">Vendr</a></h1>
+        <a href="{{ url('/home') }}">
+        <img id="logoIndex" src="/images/logotruck.png" alt="truck">
+        </a>
         @auth
             <div class="navigationIndex">
                 <h3>Deliveries</h3>

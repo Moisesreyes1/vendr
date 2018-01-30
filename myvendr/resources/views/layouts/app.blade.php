@@ -28,8 +28,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        Vendr
+                    <a href="{{ url('/') }}">
+                    <img id="logoLogin" src="/images/logotruck.png" alt="truck">
                     </a>
                 </div>
 

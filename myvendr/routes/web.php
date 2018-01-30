@@ -23,7 +23,7 @@ Route::get('/logout', 'LogoutController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-/* Deliveries view*/
+/* Deliveries Routes*/
 Route::get('/deliveries', 'DeliveriesController@index')->name('deliveries.index');
 Route::get('/deliveries/{id}', 'DeliveriesController@show')->name('deliveries.show');
 Route::post('/deliveries/{id}/edit', 'DeliveriesController@edit')->name('deliveries');
