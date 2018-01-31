@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Risque" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Crete+Round|Play|Source+Code+Pro" rel="stylesheet">
     </head>
 <body>
     <div class="container">
@@ -50,7 +51,7 @@
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a href="https://www.linkedin.com/in/moises-reyes-pagan/" target="_blank" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-slack"></a>
             <div>
                 <a class="backToTop" href="#top">Back to Top</a>
@@ -58,14 +59,15 @@
         </div>
         <div id= "containerEmptyThree"></div>
         <div id="Tools">
-            Brought To You By:
-                <h3>Laravel - Open-source PHP framework</h3>
-                <h3>PHP - Widely-used, open-source server-side scripting and general purpose programming language</h3>
-                <h3>MYSQL Workbench - Provides data modeling</h3>
-                <h3>CSS Grid - Grid-based layout system with rows and columns natively available in the browser</h3>
-                <h3>Bootstrap - Open-source front-end framework for designing websites and applications</h3>
-                <h3>MRP LLC - Thinking what's next? MRP already did.</h3>     
+            <ul>Brought To You By:
+                <li>Laravel - Open-source PHP framework</li>
+                <li>PHP - Widely-used, open-source server-side scripting and general purpose programming language</li>
+                <li>MYSQL Workbench - Provides data modeling</li>
+                <li>CSS Grid - Grid-based layout system with rows and columns natively available in the browser</li>
+                <li>Bootstrap - Open-source front-end framework for designing websites and applications</li>
+                <li>MRP LLC - Thinking what's next? MRP already did.</li>     
                 <a class="backToTop" href="#top">Back to Top</a>
+            </ul>
         </div>
     </div>
     <div class="footer">&copy; Copyright 2018 MRP LLC</div>
