@@ -28,6 +28,7 @@
                 @auth
                     <a class="links" href="{{ route('deliveries.index') }}">Deliveries</a>
                     <a class="links" href="{{ url('/logout') }}">Logout</a>
+                    <h4 id="welcomeHome">Welcome, {{ Auth::user()->name}} </h4>
                 @else
                     <a class="links" href="{{ route('login') }}">Login</a>
                     <a class="links" href="{{ route('register') }}">Register</a>

@@ -31,7 +31,6 @@ class DeliveriesController extends Controller
     public function edit($id, Request $request)
     {
         $delivery = Delivery::find($id);
-
         $delivery->comment = $request->message;
         $delivery->save();
         

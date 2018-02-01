@@ -16,6 +16,7 @@
         <a href="{{ url('/home') }}">
         <img id="logoIndex" src="/images/logotruck.png" alt="truck">
         </a>
+        <h4 id="welcome">Welcome, {{ Auth::user()->name}} </h4>
         @auth
             <div class="navigationIndex">
                 <h3>Deliveries</h3>
@@ -24,7 +25,7 @@
                 <a class="homeIndex" href="{{ url('/home') }}">Home</a>
                 <a class="logoutIndex" href="{{ url('/logout') }}">Logout</a>
             </div>
-        <div class="content">
+        <div class="content">                           
             <table class="tableContent">
                 <tr>
                     <th>Vendor/Supplier</th>

@@ -8591,6 +8591,24 @@ th {
   width: 20%;
 }
 
+#welcome {
+  position: absolute;
+  top: 20px;
+  right: 41px;
+  padding: 0;
+  margin: 0;
+  color: cornsilk;
+}
+
+#welcomeHome {
+  position: absolute;
+  top: 20px;
+  right: 125px;
+  padding: 0;
+  margin: 0;
+  color: cornsilk;
+}
+
 .titleIndex:hover {
   color: white;
   -webkit-text-decoration-line: none;
